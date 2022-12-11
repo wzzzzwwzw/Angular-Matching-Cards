@@ -4,6 +4,17 @@
   justify-content: center;
 }
 
+.p {
+  text-decoration: aliceblue;
+
+}
+
+img{
+  margin: auto;
+  width: 50%;
+  display: block;
+}
+
 .window {
   width: 35rem;
   padding: 4rem 2rem;
