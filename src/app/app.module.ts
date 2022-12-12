@@ -16,6 +16,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatDialogModule} from "@angular/material/dialog";
 import {LoginComponent} from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { PreferencesComponent } from './preferences/preferences.component';
 
 
 
@@ -29,6 +30,7 @@ import { RegisterComponent } from './register/register.component';
     NavComponent,
     LoginComponent,
     RegisterComponent,
+    PreferencesComponent,
 
 
 
