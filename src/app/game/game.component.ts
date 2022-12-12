@@ -69,13 +69,13 @@ export class GameComponent implements OnInit, OnDestroy {
     let secondCard = this.selectedCards[1];
 
     if (firstCard.img == secondCard.img) {
-      /* sumar puntos y añadirlos a cartas ganadoras*/
+      /* Sum points and add */
       this.correctMatch();
       this.winnerCards.push(firstCard);
       this.winnerCards.push(secondCard);
 
     } else {
-      /*darles la vuelta y restar puntos*/
+      /* Reverse Card */
       this.wrongMatch();
       for (let card in this.selectedCards) {
         this.selectedCards[card].flipped = !this.selectedCards[card].flipped;
@@ -86,7 +86,7 @@ export class GameComponent implements OnInit, OnDestroy {
       this.savedRecord = true;
 
     }
-    //vaciar array
+    //Empty Selected Cards
     this.selectedCards = [];
 
   }
@@ -147,8 +147,8 @@ export class GameComponent implements OnInit, OnDestroy {
 
   failedGame() {
     this.endGame = true;
-    let title = "Has perdido...";
-    let message = "Lo siento, el tiempo ha acabado.";
+    let title = "You Lost!";
+    let message = "Timeout!!";
     this.openDialog(title, message);
   }
 
@@ -156,7 +156,7 @@ export class GameComponent implements OnInit, OnDestroy {
     let game = new Game(this.playingCards, this.winnerCards, this.userScore, this.currentTime)
     let saveSuccess = await this.api.saveGame(game);
     if (saveSuccess) {
-      this._snackBar.open('Guardado', 'Close', {
+      this._snackBar.open('Saved', 'Close', {
         duration: 1000
       });
     }
@@ -172,7 +172,7 @@ export class GameComponent implements OnInit, OnDestroy {
       this.currentTime = game.timeLeft;
       this.numSelectedCards = game.playingCards.length;
 
-      this._snackBar.open('Cargado', 'Close', {
+      this._snackBar.open('Loaded', 'Close', {
         duration: 1000
       });
     }
@@ -183,7 +183,7 @@ export class GameComponent implements OnInit, OnDestroy {
     let time = parseInt(<string>localStorage.getItem("timer"));
     let record = await this.api.postRecord(this.userScore, this.numSelectedCards, time);
     if (record) {
-      this._snackBar.open('Partida grabada', 'Close', {
+      this._snackBar.open('Match Recorded', 'Close', {
         duration: 1000
       });
     }
