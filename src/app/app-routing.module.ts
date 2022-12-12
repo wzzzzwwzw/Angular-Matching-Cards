@@ -4,6 +4,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
 import {PreferencesComponent} from "./preferences/preferences.component";
+import {GameComponent} from "./game/game.component";
 
 
 const routes: Routes = [
@@ -11,6 +12,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'preferences', component: PreferencesComponent},
+  {path: 'game', component: GameComponent},
+
 
   {path: '', redirectTo: '/home', pathMatch: 'full'},
 ];
