@@ -21,6 +21,7 @@ import {GameComponent} from './game/game.component';
 import {DialogComponent} from './dialog/dialog.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { RecordsComponent } from './records/records.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 
@@ -38,9 +39,10 @@ import { RecordsComponent } from './records/records.component';
     GameComponent,
     DialogComponent,
     RecordsComponent,
+    PagenotfoundComponent,
 
 
-  ],
+  ],entryComponents: [DialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -6,6 +6,7 @@ import {RegisterComponent} from "./register/register.component";
 import {PreferencesComponent} from "./preferences/preferences.component";
 import {GameComponent} from "./game/game.component";
 import {RecordsComponent} from "./records/records.component";
+import {PagenotfoundComponent} from "./pagenotfound/pagenotfound.component";
 
 
 const routes: Routes = [
@@ -15,6 +16,8 @@ const routes: Routes = [
   {path: 'preferences', component: PreferencesComponent},
   {path: 'game', component: GameComponent},
   {path: 'records', component: RecordsComponent},
+  { path: '**', pathMatch: 'full',
+    component: PagenotfoundComponent },
 
 
   {path: '', redirectTo: '/home', pathMatch: 'full'},
