@@ -20,6 +20,9 @@ import {PreferencesComponent} from './preferences/preferences.component';
 import {GameComponent} from './game/game.component';
 import {DialogComponent} from './dialog/dialog.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { RecordsComponent } from './records/records.component';
+
+
 
 
 
@@ -34,6 +37,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     PreferencesComponent,
     GameComponent,
     DialogComponent,
+    RecordsComponent,
 
 
   ],
