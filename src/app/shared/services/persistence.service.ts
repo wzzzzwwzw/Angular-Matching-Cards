@@ -7,8 +7,8 @@ import {Subject} from "rxjs";
 export class PersistenceService {
   public isLogged: boolean = false;
   loggedChange: Subject<boolean> = new Subject<boolean>();
-  private token: string | null | undefined;
-  private username: string | undefined;
+  private token: string | null;
+  private username: string;
 
   constructor() {
     this.loggedChange.subscribe((value) => {
@@ -17,7 +17,7 @@ export class PersistenceService {
   }
 
 
-  public getToken(): string | null | undefined {
+  public getToken(): string | null {
     return this.token;
   }
 
@@ -27,7 +27,7 @@ export class PersistenceService {
   }
 
   public getUsername(): string {
-    return <string>this.username;
+    return this.username;
   }
 
   public setUsername(username: string) {

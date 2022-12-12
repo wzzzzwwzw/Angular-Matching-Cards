@@ -38,7 +38,19 @@ export class HttpService {
     })
   }
 
-
+  protected deleteRequest(path: string, needsToken: boolean): Promise<any> {
+    return new Promise((resolve, reject) => {
+      this.http.delete(path, this.getOptions(null, needsToken)).subscribe(res => {
+        resolve(res);
+      }, error => {
+        if (error.status === 200) {
+          resolve(null);
+        } else {
+          reject(error);
+        }
+      })
+    });
+  }
 
   private getOptions(params: any, needsToken: boolean): Object {
     let res: any = {};

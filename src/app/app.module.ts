@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home/home.component';
-import { FooterComponent } from './footer/footer/footer.component';
-import { NavComponent } from './nav/nav/nav.component';
-import { AppRoutingModule } from './app-routing.module';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {AppComponent} from './app.component';
+import {HomeComponent} from './home/home/home.component';
+import {FooterComponent} from './footer/footer/footer.component';
+import {NavComponent} from './nav/nav/nav.component';
+import {AppRoutingModule} from './app-routing.module';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
 import {MatInputModule} from "@angular/material/input";
@@ -15,10 +15,11 @@ import {MatIconModule} from "@angular/material/icon";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatDialogModule} from "@angular/material/dialog";
 import {LoginComponent} from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { PreferencesComponent } from './preferences/preferences.component';
-
-
+import {RegisterComponent} from './register/register.component';
+import {PreferencesComponent} from './preferences/preferences.component';
+import {GameComponent} from './game/game.component';
+import {DialogComponent} from './dialog/dialog.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 
@@ -31,7 +32,8 @@ import { PreferencesComponent } from './preferences/preferences.component';
     LoginComponent,
     RegisterComponent,
     PreferencesComponent,
-
+    GameComponent,
+    DialogComponent,
 
 
   ],
@@ -49,10 +51,12 @@ import { PreferencesComponent } from './preferences/preferences.component';
     HttpClientModule,
     MatSnackBarModule,
     MatTableModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressSpinnerModule
 
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
