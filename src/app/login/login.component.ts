@@ -46,7 +46,7 @@ export class LoginComponent implements OnInit {
     let submit = await this.api.login(username, password);
 
     if (submit) {
-      let message = 'Inicio de sesión con éxito';
+      let message = 'Successful login';
       let action = 'close'
       this._snackBar.open(message, action, {
         duration: 1000
@@ -56,7 +56,7 @@ export class LoginComponent implements OnInit {
 
       this.clearFields()
     } else {
-      let message = 'Error en la autenticación';
+      let message = 'Authentication error';
       let action = 'close'
       this._snackBar.open(message, action, {
         duration: 1000
