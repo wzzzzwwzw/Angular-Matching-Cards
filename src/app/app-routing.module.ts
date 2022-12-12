@@ -20,7 +20,7 @@ const routes: Routes = [
     component: PagenotfoundComponent },
 
 
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+
 ];
 
 
