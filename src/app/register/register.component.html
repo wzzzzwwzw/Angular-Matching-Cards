@@ -1,0 +1,53 @@
+<section class="auth">
+  <h1>Register</h1>
+  <form *ngIf="registerForm" [formGroup]="registerForm">
+
+    <div class="control">
+      <mat-form-field appearance="outline">
+        <mat-label>Username</mat-label>
+        <input (focusout)="checkUsername()" formControlName="username" matInput placeholder="user1 " required>
+        <mat-error *ngIf="registerForm.controls['username'].hasError('takenUsername')">Username exists
+        </mat-error>
+        <mat-error *ngIf="registerForm.controls['username'].hasError('required')">Please enter username</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="control">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input formControlName="email" matInput placeholder="pat@example.com" required>
+        <mat-error *ngIf="registerForm.controls['email'].hasError('pattern')">Invalid email:
+          example@domain.com
+        </mat-error>
+        <mat-error *ngIf="registerForm.controls['email'].hasError('required')">Please enter an email</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="control">
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input formControlName="password" matInput placeholder="password" required type="password">
+        <mat-error *ngIf="registerForm.controls['password'].hasError('minlength')">at least 6 caracters</mat-error>
+        <mat-error *ngIf="registerForm.controls['password'].hasError('required')">Please enter a password</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="control">
+      <mat-form-field appearance="outline">
+        <mat-label>Repeat password</mat-label>
+        <input formControlName="confirmPassword" matInput placeholder="password" required type="password">
+        <mat-error *ngIf="registerForm.controls['confirmPassword'].hasError('nomatch')">wrong password
+        </mat-error>
+        <mat-error *ngIf="registerForm.controls['confirmPassword'].hasError('required')">Please enter a password
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="actions">
+      <button (click)="submit()" [disabled]="submitDisabled" class="toogle" type="button">
+        New account
+      </button>
+    </div>
+
+  </form>
+</section>

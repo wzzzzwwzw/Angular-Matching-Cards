@@ -36,5 +36,35 @@ export class ApiService extends HttpService {
     })
   }
 
+  async createUser(username: string, email: string, password: string): Promise<boolean> {
+    let route = this.PATH + 'users';
+
+    return new Promise((resolve) => {
+      this.postRequest(route, {username: username, email: email, password: password}, false).then(_ => {
+        resolve(true);
+
+      }).catch(err => {
+        console.log('ERROR' + err)
+        resolve(false);
+
+      })
+    })
+  }
+
+  async usernameExists(username: string): Promise<boolean> {
+    let route = this.PATH + 'users/' + username;
+
+    return new Promise((resolve, reject) => {
+      this.getRequest(route, null, false).then(_ => {
+        resolve(true);
+      }).catch(err => {
+        if (err.error !== "username not found") {
+          console.log(err);
+        }
+        resolve(false);
+      })
+    })
+  }
+
 
 }
