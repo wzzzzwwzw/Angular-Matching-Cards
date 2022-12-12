@@ -33,6 +33,6 @@ export class PreferencesComponent implements OnInit {
       duration: 1000
     });
 
-    this.router.navigate(['/play']);
+    this.router.navigate(['/game']);
   }
 }
