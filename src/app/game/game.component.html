@@ -21,10 +21,10 @@
       </div>
 
       <div class="wrap" id="saveOptions">
-        <button (click)="saveGame()" *ngIf="isLogged" class="button" color="accent" mat-stroked-button>Guardar partida
+        <button (click)="saveGame()" *ngIf="isLogged" class="button" color="accent" mat-stroked-button>Save Game
         </button>
-        <button (click)="loadGame()" *ngIf="isLogged" class="button" color="primary" mat-stroked-button>Recuperar
-          partida
+        <button (click)="loadGame()" *ngIf="isLogged" class="button" color="primary" mat-stroked-button>Restore
+          Game
         </button>
         <button (click)="saveRecord()" *ngIf="savedRecord && isLogged" [disabled]="disabled" class="button"
                 color="primary"
