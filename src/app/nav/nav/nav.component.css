@@ -3,6 +3,10 @@
   font-weight: 600;
 }
 
+a { font-family: Arial;
+    font-style: normal;
+color: #37343f}
+
 #logo {
   margin-left: 2.5rem;
   margin-right: 1em;

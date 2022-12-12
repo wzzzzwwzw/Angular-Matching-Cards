@@ -17,7 +17,7 @@ mat-form-field {
 .auth h1 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #6f45ad;
+  color: #ffaa24;
 }
 
 .actions {
@@ -31,35 +31,35 @@ mat-form-field {
   cursor: pointer;
   font: inherit;
   color: white;
-  background-color: #9f5ccc;
-  border: 1px solid #9f5ccc;
+  background-color: #ffaa24;
+  border: 1px solid #ffaa24;
   border-radius: 4px;
   padding: 1rem 2.5rem;
 }
 
 .actions button:hover {
-  background-color: #873abb;
-  border-color: #873abb;
+  background-color: #ffaa24;
+  border-color: #ffaa24;
 }
 
 button:disabled:hover,
 button:disabled:active {
   color: #37343f;
-  background-color: #b2adbe;
-  border-color: #ab9dce;
+  background-color: #ffaa24;
+  border-color: #ffaa24;
 }
 
 .actions .toggle {
   margin-top: 1rem;
   background-color: transparent;
-  color: #9f5ccc;
+  color: #ffaa24;
   border: none;
   padding: 0.15rem 1.5rem;
 }
 
 .actions .toggle:hover {
   background-color: transparent;
-  color: #ae82cc;
+  color: #ffaa24;
 }
 
 mat-form-field {
