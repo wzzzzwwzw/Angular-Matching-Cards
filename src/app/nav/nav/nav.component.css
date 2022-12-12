@@ -1,0 +1,25 @@
+#menu {
+  background-color: #ffaa24 !important;
+  font-weight: 600;
+}
+
+#logo {
+  margin-left: 2.5rem;
+  margin-right: 1em;
+}
+
+#navbarToggleDemo02 {
+  margin: 0 2em 0 1em;
+}
+
+#navbarToggleDemo02 > ul li {
+  padding-right: 1.5rem;
+}
+
+#navbarToggleDemo01 > ul li {
+  padding-right: 1.5em;
+}
+
+.m-auto {
+  margin-right: 0 !important;
+}
