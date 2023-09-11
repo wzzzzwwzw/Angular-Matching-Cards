@@ -1,7 +1,11 @@
 # Angular-Matching-Cards
 
 The Angular Matching Card Game is an engaging and interactive web-based memory game where players are challenged to match pairs of cards. It's a fun and educational game suitable for all ages that tests your memory and cognitive skills.
+
 ![mc](https://github.com/wzzzzwwzw/Angular-Matching-Cards/assets/46055260/118932ea-d17d-4de6-b9f7-d195d3264596)
+
+![mc2](https://github.com/wzzzzwwzw/Angular-Matching-Cards/assets/46055260/c57497d6-e591-4686-986f-b846ff96e86e)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
 
