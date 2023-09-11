@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# naipes-fenw2
-=======
-# MatchingGameFENW2
+# Angular-Matching-Cards
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
 
@@ -28,4 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
->>>>>>> 00efb4c (initial commit)
+## Technologies Used
+
+- [DiscordJS](https://discordjs.guide) with [Typescript](https://www.typescriptlang.org)
+- Stargate - sign up with GitHub login for [FREE on DataStax Stargate](http://links.eddiejaoude.io/t/CiEQRydj4GdT) and get a NoSQL DB up in minutes with approximately `30 million reads, 5 million writes, and 40GB of storage per month for free` (Docker container also available) - [watch a 1min video by me on how to create and retrieve data](https://www.youtube.com/watch?v=JCAmqn1BxhY)
